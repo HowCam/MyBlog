@@ -189,7 +189,7 @@ post_meta:
 
 # 主色调相关配置
 mainTone:
-  enable: false # true or false 文章是否启用获取图片主色调
+  enable: true # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
@@ -611,19 +611,19 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#425AEF"
-  dark_main: "#f2b94b"
-  paginator: "#425AEF"
+  main: "#00FF7F"
+  dark_main: "#2E8B57"
+  paginator: "#00FF7F"
   #   button_hover: "#FF7242"
-  text_selection: "#2128bd"
+  text_selection: "#2E8B57"
   link_color: "var(--anzhiyu-fontcolor)"
   meta_color: "var(--anzhiyu-fontcolor)"
   hr_color: "#4259ef23"
   code_foreground: "#fff"
   code_background: "var(--anzhiyu-code-stress)"
-  toc_color: "#425AEF"
-  #   blockquote_padding_color: "#425AEF"
-  #   blockquote_background_color: "#425AEF"
+  toc_color: "#00FF7F"
+  #   blockquote_padding_color: "#00FF7F"
+  #   blockquote_background_color: "#00FF7F"
   scrollbar_color: "var(--anzhiyu-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
@@ -1000,7 +1000,7 @@ aplayerInject:
 snackbar:
   enable: true
   position: bottom-left
-  bg_light: "#425AEF" # The background color of Toast Notification in light mode
+  bg_light: "#00FF7F	" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
@@ -1054,12 +1054,12 @@ home_top:
     - name: code
       path: /categories/code/
       shadow: var(--anzhiyu-shadow-blue)
-      class: blue
+      class: green
       icon: anzhiyu-icon-dove
     - name: 我的高中
       path: /categories/我的高中/
       shadow: var(--anzhiyu-shadow-red)
-      class: red
+      class: green
       icon: anzhiyu-icon-fire
     - name: 感觉到位
       path: /categories/感觉到位/
